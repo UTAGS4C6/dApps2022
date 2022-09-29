@@ -1,3 +1,11 @@
 {
-  "server": ""
+  "server": {
+    "db": "carUT",
+    "name": "admin",
+    "pwd": "i5N3nIi7RnftpDdMUY8TVsC9g1944OgW"
+  },
+  "token":{
+    "alg": "HS256",
+    "typ": "JWT"
+  }
 }
