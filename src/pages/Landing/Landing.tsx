@@ -1,33 +1,20 @@
 import React from 'react';
 import {
   IonPage,
-  IonHeader,
-  IonToolbar,
+  IonItem,
   IonTitle,
   IonContent,
-  IonGrid,
-  IonRow,
-  IonCol
 } from '@ionic/react';
 
+import Sidebar from '../../components/sidebar/Sidebar';
 import LogIn from './LogIn';
 
 const Landing: React.FC = () => {
   return(
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle></IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent>
-        <IonGrid>
-          <IonRow>
-            <IonCol>
-              <h1>Landing Page</h1>
-            </IonCol>
-          </IonRow>
-        </IonGrid>
+        <Sidebar />
+        <IonTitle>Landing Page</IonTitle>
         <LogIn />
       </IonContent>
     </IonPage>

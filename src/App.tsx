@@ -5,8 +5,6 @@ import { IonReactRouter } from '@ionic/react-router';
 import Landing from './pages/Landing/Landing';
 import Main from './pages/Main/Main';
 
-import Sidebar from './components/sidebar/Sidebar';
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -30,7 +28,6 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <Sidebar />
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path='/HOME' component={Landing} exact/>
