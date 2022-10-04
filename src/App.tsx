@@ -6,6 +6,7 @@ import Landing from './pages/Landing/Landing';
 import PassengerAsk from './pages/RequestSent/PassengerAsk';
 import PassengerAccepted from './pages/RequestSent/PassengerAccepted';
 import Account from './pages/Account/Account';
+import History from './pages/Account/History';
 import Main from './pages/Main/Main';
 
 /* Core CSS required for Ionic components to work properly */
@@ -38,6 +39,7 @@ const App: React.FC = () => (
         <Route path='/PassengerAsk' component={PassengerAsk} exact/>
         <Route path='/PassengerAccepted' component={PassengerAccepted} exact/>
         <Route path='/Account' component={Account} exact/>
+        <Route path='/History' component={History} exact/>
         <Redirect to='/HOME' />
       </IonRouterOutlet>
     </IonReactRouter>

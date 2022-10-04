@@ -45,7 +45,7 @@ const Account: React.FC = () => {
             </IonItem>
           </IonItemDivider>
           <IonItemDivider>
-            <IonItem>
+            <IonItem routerLink='/HOME'>
               <IonTitle>Cerrar Sesión</IonTitle>
             </IonItem>
           </IonItemDivider>

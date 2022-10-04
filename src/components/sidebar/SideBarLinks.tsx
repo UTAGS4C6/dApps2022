@@ -1,19 +1,22 @@
 import React from 'react';
 import {
   IonItem,
-  IonIcon,
+  IonImg,
   IonLabel
 } from '@ionic/react';
 
 const navLinks = [
-  {icon:'https://via.placeholder.com/150',name: 'Cuenta',route: '/Account'},
-  {icon:'https://via.placeholder.com/150',name: 'Página Principal',route: '/HOME'},
-  {icon:'https://via.placeholder.com/150',name: 'Viajes',route: '/History'},
-  {icon:'https://via.placeholder.com/150',name: 'Settings',route: '/Settings'},
-  {icon:'https://via.placeholder.com/150',name: 'Share Trip',route: '/Share'},
-  {icon:'https://via.placeholder.com/150',name: 'Support',route: '/Support'},
-  {icon:'https://via.placeholder.com/150',name: 'Pagos',route: '/Pay'},
-  {icon:'https://via.placeholder.com/150',name: 'Info',route: '/About'}
+  {icon: 'https://via.placeholder.com/16', name: 'Cuenta', route: '/Account'},
+  {icon: 'https://via.placeholder.com/16',name: 'Conducir', route: '/Drive'},
+  {icon: 'https://via.placeholder.com/16',
+    name: 'Página Principal',
+    route: '/Main'},
+  {icon: 'https://via.placeholder.com/16', name: 'Viajes', route: '/History'},
+  {icon: 'https://via.placeholder.com/16',name: 'Settings',route: '/Settings'},
+  {icon: 'https://via.placeholder.com/16',name: 'Share Trip', route: '/Share'},
+  {icon: 'https://via.placeholder.com/16', name: 'Support', route: '/Support'},
+  {icon: 'https://via.placeholder.com/16', name: 'Pagos', route: '/Pay'},
+  {icon: 'https://via.placeholder.com/16', name: 'Info', route: '/About'}
 ];
 
 const SideBarLinks: React.FC = () => {
@@ -21,7 +24,7 @@ const SideBarLinks: React.FC = () => {
     <>
     {navLinks.map((nlink,i)=>(
       <IonItem key={i} routerLink={nlink.route}>
-        <IonIcon color="medium" slot="start" icon={nlink.icon} />
+        <IonImg color="medium" slot="start" src={nlink.icon} />
         <IonLabel>{nlink.name}</IonLabel>
     </IonItem>
     ))}
