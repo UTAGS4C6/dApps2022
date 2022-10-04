@@ -13,7 +13,6 @@ const navLinks = [
     route: '/Main'},
   {icon: 'https://via.placeholder.com/16', name: 'Viajes', route: '/History'},
   {icon: 'https://via.placeholder.com/16',name: 'Settings',route: '/Settings'},
-  {icon: 'https://via.placeholder.com/16',name: 'Share Trip', route: '/Share'},
   {icon: 'https://via.placeholder.com/16', name: 'Support', route: '/Support'},
   {icon: 'https://via.placeholder.com/16', name: 'Pagos', route: '/Pay'},
   {icon: 'https://via.placeholder.com/16', name: 'Info', route: '/About'}
