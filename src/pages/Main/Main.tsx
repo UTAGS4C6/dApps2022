@@ -48,7 +48,7 @@ const Main: React.FC = () => {
           ))}
           <IonRow>
             <IonCol>
-              <IonButton>
+              <IonButton routerLink='/PassengerAsk'>
                 Pedir Viaje
               </IonButton>
             </IonCol>

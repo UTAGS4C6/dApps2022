@@ -32,3 +32,6 @@ yarn-error.log*
 
 #assets
 /src/assets/
+
+#templates
+/templates/
