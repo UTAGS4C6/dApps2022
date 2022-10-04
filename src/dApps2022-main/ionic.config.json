@@ -1,7 +1,0 @@
-{
-  "name": "uberutags",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
