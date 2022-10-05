@@ -2,7 +2,8 @@ import React from 'react';
 import {
   IonItem,
   IonImg,
-  IonLabel
+  IonLabel,
+  IonMenuToggle
 } from '@ionic/react';
 
 const navLinks = [
@@ -22,10 +23,12 @@ const SideBarLinks: React.FC = () => {
   return(
     <>
     {navLinks.map((nlink,i)=>(
-      <IonItem key={i} routerLink={nlink.route}>
-        <IonImg color="medium" slot="start" src={nlink.icon} />
-        <IonLabel>{nlink.name}</IonLabel>
-    </IonItem>
+      <IonMenuToggle>
+        <IonItem key={i} routerLink={nlink.route}>
+          <IonImg color="medium" slot="start" src={nlink.icon} />
+          <IonLabel>{nlink.name}</IonLabel>
+        </IonItem>
+      </IonMenuToggle>
     ))}
     </>
   );
