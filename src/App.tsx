@@ -12,6 +12,7 @@ import UULocation from './pages/Account/UULocation';
 import Contacts from './pages/Account/Contacts';
 import Notifications from './pages/Account/Notifications';
 import DeleteAccount from './pages/Account/DeleteAccount';
+import SignUp from './pages/Landing/SignUp';
 import Main from './pages/Main/Main';
 
 /* Core CSS required for Ionic components to work properly */
@@ -40,6 +41,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path='/HOME' component={Landing} exact/>
+        <Route path='/NewAccount' component={SignUp} exact/>
         <Route path='/Main' component={Main} exact/>
         <Route path='/PassengerAsk' component={PassengerAsk} exact/>
         <Route path='/PassengerAccepted' component={PassengerAccepted} exact/>

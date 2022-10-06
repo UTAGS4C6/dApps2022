@@ -4,8 +4,7 @@ import {
   IonContent,
   IonHeader,
   IonMenu,
-  IonMenuButton,
-  IonPage,
+  IonButton,
   IonTitle,
   IonToolbar,
   IonList,
@@ -14,17 +13,26 @@ import {
 import SideBarLinks from './SideBarLinks';
 
 const Sidebar: React.FC = () => {
+  const usr = {
+    account: "Testing",
+    ico: "Testing"
+  };
   return (
     <>
       <IonMenu contentId="main-content">
         <IonHeader>
           <IonToolbar>
-            <IonTitle>Menu Content</IonTitle>
+            <IonTitle>{usr.account}</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
           <IonList>
             <SideBarLinks />
+          </IonList>
+          <IonList>
+            <IonButton>
+              Cerrar Sesión
+            </IonButton>
           </IonList>
         </IonContent>
       </IonMenu>

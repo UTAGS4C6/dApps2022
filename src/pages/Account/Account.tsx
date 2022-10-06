@@ -11,10 +11,12 @@ import {
 } from '@ionic/react';
 
 import Sidebar from '../../components/sidebar/Sidebar';
+import Header from '../../components/GeneralComponents/Header';
 
 const Account: React.FC = () => {
   return(
     <IonPage>
+      <Header />
       <Sidebar />
       <IonContent>
         <IonList>

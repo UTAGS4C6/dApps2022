@@ -12,21 +12,23 @@ import {
 
 import './Main.css';
 import Sidebar from '../../components/sidebar/Sidebar';
+import Header from '../../components/GeneralComponents/Header';
 
 const Main: React.FC = () => {
-  const [origin,setOrigin] = useState<String>(),
-    [destination,setDestination] = useState<String>(),
-    [price,setPrice] = useState<String>(),
-    [comment,setComment] = useState<String>();
+  const [origin,setOrigin] = useState<string>(),
+    [destination,setDestination] = useState<string>(),
+    [price,setPrice] = useState<string>(),
+    [comment,setComment] = useState<string>();
 
   const mainForm = [
     {icon:"ico",name:"Origen",todo:origin,test:setOrigin},
-    {icon:"ico",name:"Destino",todo:destination},
-    {icon:"ico",name:"Precio",todo:price},
-    {icon:"ico",name:"Comment",todo:comment},
+    {icon:"ico",name:"Destino",todo:destination,test:setDestination},
+    {icon:"ico",name:"Precio",todo:price,test:setPrice},
+    {icon:"ico",name:"Comment",todo:comment,test:setComment},
   ];
   return(
     <IonPage>
+    <Header />
     <Sidebar />
       <IonContent id="main-content">
         <IonGrid className="main-background">
