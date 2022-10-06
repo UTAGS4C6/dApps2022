@@ -13,7 +13,6 @@ const Landing: React.FC = () => {
     <IonPage>
       <IonContent>
         <Sidebar />
-        <IonTitle>Landing Page</IonTitle>
         <LogIn />
       </IonContent>
     </IonPage>

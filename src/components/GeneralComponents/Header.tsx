@@ -2,7 +2,8 @@ import React from 'react';
 import {
   IonHeader,
   IonToolbar,
-  IonTitle
+  IonTitle,
+  IonBackButton
 } from '@ionic/react';
 
 const HeaderUU: React.FC = () => {
@@ -11,6 +12,7 @@ const HeaderUU: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>
+            <IonBackButton></IonBackButton>
             <h1 className="ion-text-center">Header</h1>
           </IonTitle>
         </IonToolbar>
