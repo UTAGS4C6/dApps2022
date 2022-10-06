@@ -9,10 +9,12 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import LogIn from './LogIn';
 
 const Landing: React.FC = () => {
+  const page = {
+    name:"Inscribirse"
+  }
   return(
     <IonPage>
       <IonContent>
-        <Sidebar />
         <LogIn />
       </IonContent>
     </IonPage>

@@ -34,8 +34,10 @@ const LogIn: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={personOutline}/>
             </IonCol>
-            <IonCol size="2"><p>Usuario</p></IonCol>
-            <IonCol size="9">
+            <IonCol size="11"><p>Usuario</p></IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="12">
               <IonInput value={text}
                 placeholder="Enter Input"
                 onIonChange={e => setText(e.detail.value!)}
@@ -47,7 +49,9 @@ const LogIn: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={keyOutline} />
             </IonCol>
-            <IonCol size="2"><p>Password</p></IonCol>
+            <IonCol size="11"><p>Password</p></IonCol>
+          </IonRow>
+          <IonRow>
             <IonCol size="9">
               <IonInput 
                 value={password}

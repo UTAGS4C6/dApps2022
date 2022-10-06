@@ -2,18 +2,16 @@ import React from 'react';
 import {
   IonHeader,
   IonToolbar,
-  IonTitle,
-  IonBackButton
+  IonTitle
 } from '@ionic/react';
 
-const HeaderUU: React.FC = () => {
+const HeaderUU = (props:any) => {
   return(
     <>
       <IonHeader>
         <IonToolbar>
           <IonTitle>
-            <IonBackButton></IonBackButton>
-            <h1 className="ion-text-center">Header</h1>
+            <h1 className="ion-text-center">{props.pageName}</h1>
           </IonTitle>
         </IonToolbar>
       </IonHeader>

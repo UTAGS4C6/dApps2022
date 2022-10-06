@@ -16,7 +16,7 @@ import Header from '../../components/GeneralComponents/Header';
 const Account: React.FC = () => {
   return(
     <IonPage>
-      <Header />
+      <Header pageName={"Manejo de Cuenta"}/>
       <Sidebar />
       <IonContent>
         <IonList>

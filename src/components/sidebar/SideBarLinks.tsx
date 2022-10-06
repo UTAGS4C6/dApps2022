@@ -31,7 +31,7 @@ const navLinks:any = [
   {icon: informationCircleOutline, name: 'Info', route: '/About'}
 ];
 
-const SideBarLinks: React.FC = () => {
+function SideBarLinks():any{
   return(
     <>
     {navLinks.map((nlink: {
@@ -39,8 +39,8 @@ const SideBarLinks: React.FC = () => {
       route: string | undefined;
       name: string | undefined;},
       i: React.Key | null | undefined)=>(
-      <IonMenuToggle>
-        <IonItem key={i} routerLink={nlink.route}>
+      <IonMenuToggle key={i}>
+        <IonItem routerLink={nlink.route}>
           <IonIcon icon={nlink.icon}/>
           <IonLabel>{nlink.name}</IonLabel>
         </IonItem>

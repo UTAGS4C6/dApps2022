@@ -8,11 +8,12 @@ import {
   IonTitle,
   IonToolbar,
   IonList,
+  IonNav,
 } from '@ionic/react';
 
 import SideBarLinks from './SideBarLinks';
 
-const Sidebar: React.FC = () => {
+function Sidebar(){
   const usr = {
     account: "Testing",
     ico: "Testing"
@@ -30,7 +31,7 @@ const Sidebar: React.FC = () => {
             <SideBarLinks />
           </IonList>
           <IonList>
-            <IonButton>
+            <IonButton routerLink='/HOME'>
               Cerrar Sesión
             </IonButton>
           </IonList>

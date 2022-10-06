@@ -36,8 +36,10 @@ const SignUp: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={personOutline}/>
             </IonCol>
-            <IonCol size="2"><p>Usuario</p></IonCol>
-            <IonCol size="9">
+            <IonCol size="11"><p>Usuario</p></IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="12">
               <IonInput value={usr}
                 placeholder="Enter Input"
                 onIonChange={e => setText(e.detail.value!)}
@@ -49,8 +51,10 @@ const SignUp: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={personOutline}/>
             </IonCol>
-            <IonCol size="2"><p>Email</p></IonCol>
-            <IonCol size="9">
+            <IonCol size="11"><p>Email</p></IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="12">
               <IonInput value={email}
                 placeholder="Enter Input"
                 onIonChange={e => setEmail(e.detail.value!)}
@@ -62,8 +66,10 @@ const SignUp: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={keyOutline} />
             </IonCol>
-            <IonCol size="2"><p>Password</p></IonCol>
-            <IonCol size="9">
+            <IonCol size="11"><p>Password</p></IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol size="12">
               <IonInput 
                 value={pwd}
                 type="password"
@@ -77,7 +83,9 @@ const SignUp: React.FC = () => {
             <IonCol size="1">
               <IonIcon color="medium" slot="start" icon={keyOutline} />
             </IonCol>
-            <IonCol size="2"><p>Repita el Password</p></IonCol>
+            <IonCol size="11"><p>Repita el Password</p></IonCol>
+          </IonRow>
+          <IonRow className='ion-padding-bottom'>
             <IonCol size="9">
               <IonInput 
                 value={pwd1}
