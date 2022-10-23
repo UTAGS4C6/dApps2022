@@ -1,0 +1,13 @@
+{
+  "navLinks": [
+    {"icon": "peopleOutline", "name": "Cuenta", "route": "/Account"},
+    {"icon": "notificationsOutline", "name":"Notificaciones", "route": "/Notificaciones"},
+    {"icon": "carOutline", "name": "Conducir", "route": "/Drive"},
+    {"icon": "homeOutline", "name": "Página Principal", "route": "/Main"},
+    {"icon": "mapOutline", "name": "Viajes", "route": "/History"},
+    {"icon": "cogOutline", "name": "Settings","route": "/Settings"},
+    {"icon": "helpOutline", "name": "Support", "route": "/Support"},
+    {"icon": "cardOutline", "name": "Pagos", "route": "/Pay"},
+    {"icon": "informationCircleOutline", "name": "Info", "route": "/About"}
+  ]
+}
