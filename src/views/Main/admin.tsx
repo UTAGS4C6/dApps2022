@@ -12,7 +12,7 @@ import {
 } from '@ionic/react';
 import Header from '../../components/GeneralComponents/Header';
 import Sidebar from '../../components/sidebar/Sidebar';
-import { Dashboard } from '../../pages/Admin/Dashboard';
+import { Dashboard } from '../Admin/Dashboard';
 
 export const Admin = () => {
   return(

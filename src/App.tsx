@@ -1,7 +1,8 @@
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import { IonApp, setupIonicReact } from '@ionic/react';
+import dotenv from 'dotenv';
+import database from './data/database';
 
-import { AppRouter } from './components/router';
+import AppRouter from './components/Router';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -26,11 +27,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <AppRouter />
-      </IonRouterOutlet>
-    </IonReactRouter>
+      <AppRouter />
   </IonApp>
 );
 
